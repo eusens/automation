@@ -5,7 +5,7 @@ import Pagination from "@/components/Pagination";
 
 const PAGE_SIZE = 5;
 
-const Products = ({ searchParams }: { searchParams: { page?: string } }) => {
+const Products = async  ({ searchParams }: { searchParams: { page?: string } }) => {
   const currentPage = Number(searchParams?.page) || 1;
   const totalProducts = sampleData.products.length;
   // const totalPages = Math.ceil(totalProducts / PAGE_SIZE);
