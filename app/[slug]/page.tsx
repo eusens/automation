@@ -1,3 +1,5 @@
+export const runtime = "edge"; // ✅ tell Next.js + Cloudflare to use Edge runtime
+
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import sampleData from "@/db/sample-data";
