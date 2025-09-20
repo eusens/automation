@@ -5,10 +5,12 @@ import Pagination from "@/components/Pagination";
 
 const PAGE_SIZE = 5;
 
-const Products = async  ({ searchParams }: { searchParams: { page?: string } }) => {
-  const currentPage = Number(searchParams?.page) || 1;
+// Make the component async and await searchParams
+const Products = async ({ searchParams }: { searchParams: Promise<{ page?: string }> }) => {
+  // Await the searchParams promise
+  const params = await searchParams;
+  const currentPage = Number(params?.page) || 1;
   const totalProducts = sampleData.products.length;
-  // const totalPages = Math.ceil(totalProducts / PAGE_SIZE);
   
   const startIndex = (currentPage - 1) * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;
