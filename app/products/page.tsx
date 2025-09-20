@@ -5,6 +5,8 @@ import Pagination from "@/components/Pagination";
 
 const PAGE_SIZE = 5;
 
+export const runtime = 'edge';
+
 // Make the component async and await searchParams
 const Products = async ({ searchParams }: { searchParams: Promise<{ page?: string }> }) => {
   // Await the searchParams promise
