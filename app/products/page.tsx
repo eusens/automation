@@ -3,7 +3,7 @@ import sampleData from '@/db/sample-data';
 import ProductList from '@/components/product-list';
 import Pagination from "@/components/Pagination";
 
-const PAGE_SIZE = 6;
+const PAGE_SIZE = 12;
 
 export const runtime = 'edge';
 
