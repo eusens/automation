@@ -3,7 +3,7 @@ import sampleData from '@/db/sample-data';
 import ProductList from '@/components/product-list';
 import Pagination from "@/components/Pagination";
 
-const PAGE_SIZE = 5;
+const PAGE_SIZE = 6;
 
 export const runtime = 'edge';
 
@@ -22,6 +22,7 @@ const Products = async ({ searchParams }: { searchParams: Promise<{ page?: strin
 
   return (
     <>
+      
       <ProductList
         data={paginatedProducts}
         title='Product List'

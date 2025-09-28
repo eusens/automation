@@ -14,7 +14,7 @@ const sampleData = {
       "numReviews": 10,
       "stock": 17,
       "isFeatured": true,
-      "banner": null,
+      "banner": '/images/banner-1.jpg',
       "details": "SIMATIC ET 200SP IM 155-6 PN ST Sealed",
       "conditions": "Sealed"
     },
@@ -32,7 +32,7 @@ const sampleData = {
       "numReviews": 10,
       "stock": 25,
       "isFeatured": true,
-      "banner": null,
+      "banner": '/images/banner-2.jpg',
       "details": "SIMATIC S7-1200 CPU 1215C DC/DC/DC Sealed",
       "conditions": "Sealed"
     },
@@ -358,6 +358,24 @@ const sampleData = {
       "isFeatured": true,
       "banner": null,
       "details": "SIMATIC HMI KTP1200 Basic Sealed",
+      "conditions": "Sealed"
+    },
+    {
+      "name": "0200011640",
+      "slug": "0200011640",
+      "category": "Honeywell",
+      "description": "Nylon Weather Protection for Combustible Sensor",
+      "images": [
+        "https://sanityimages.s3.us-west-2.amazonaws.com/IMG_9467.webp"
+      ],
+      "price": 93.47,
+      "brand": "Honeywell",
+      "rating": 4.5,
+      "numReviews": 10,
+      "stock": 4,
+      "isFeatured": true,
+      "banner": null,
+      "details": "Nylon Weather Protection for Combustible Sensor",
       "conditions": "Sealed"
     }
   ]

@@ -1,16 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
+import CategoryDrawer from "./category-drawer";
+import Search from "./search";
+import ViewAllProductsButton from "./view-all-products-button";
 
 const Navbar = () => {
   return (
     <header className="bg-white shadow-sm font-work-sans">
       {/* Navbar */}
       <nav className="px-5 py-3 flex justify-between items-center">
+      <div><CategoryDrawer/></div>
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image src="/images/logo2.jpg" alt="logo" width={200} height={40} />
         </Link>
-
+        <div className='hidden md:block'>
+          <Search />
+        </div>
         {/* Navigation */}
         <div className="flex items-center gap-6 text-black">
           <Link href="/" className="text-sm hover:text-blue-600">
@@ -45,12 +51,7 @@ const Navbar = () => {
           <h1 className="text-4xl font-bold mb-4">Welcome to Our Store</h1>
           <p className="mb-6">Explore the best products from top brands</p>
           <p className="mb-18">Control & Monitoring: DCS, ESD. SCADA, HMI, PLC</p>
-          <Link
-            href="/products"
-            className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-          >
-            Shop Now
-          </Link>
+          <ViewAllProductsButton />
         </div>
       </div>
     </header>
