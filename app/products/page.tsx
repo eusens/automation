@@ -21,14 +21,12 @@ const Products = async ({ searchParams }: { searchParams: Promise<{ page?: strin
   const hasNextPage = endIndex < totalProducts;
 
   return (
-    <>
-      
-      <ProductList
-        data={paginatedProducts}
-        title='Product List'
-      />
-      <Pagination page={currentPage} isNext={hasNextPage} />
-    </>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ProductList data={paginatedProducts} title="Product List" />
+      <div className="mt-8 flex justify-center">
+        <Pagination page={currentPage} isNext={hasNextPage} />
+      </div>
+    </div>
   );
 };
 
